@@ -7,12 +7,42 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <h1>Hardy Hardy-Weinberg Calculator Thingy</h1>
+    
     <form onkeyup="update()">
-      # of organisms w/ Dominant Phenotypes: <input type="text" id="dominantInput">
+      # of organisms w/ Dominant Phenotypes: <input type="text" id="dominantInput" value="0">
       <br>
-      # of organisms w/ recessive Phenotypes: <input type="text" id="recessiveInput">
+      # of organisms w/ recessive Phenotypes: <input type="text" id="recessiveInput" value="0">
     </form>
     
+    <br>
+    Total: <span id="total_output"></span><br>
+    <br>
+    
+    p: <span id="p_output"></span><br>
+    q: <span id="q_output"></span><br>
+    <br>
+    
+    p^2: <span id="p^2_output"></span><br>
+    2pq: <span id="2pq_output"></span><br>
+    q^2: <span id="q^2_output"></span><br>
+    <br>
+    
+    <h5>Homozygous Dominant</h5>
+    Un-Rounded: <span id="homoDominant_output"></span><br>
+    Rounded:    <span id="homoDominant-Rounded_output"></span><br>
+    <br>
+    
+    <h5>Heterozygous</h5>
+    Un-Rounded: <span id="hetero_output"></span><br>
+    Rounded:    <span id="hetero-Rounded_output"></span><br>
+    <br>
+    
+    <h5>Homozygous Recessive</h5>
+    Un-Rounded: <span id="homoRecessive_output"></span><br>
+    <br>
+    
+    <span id="console"></span>
     <script src="index.js"></script>
   </body>
 </html>
